@@ -185,9 +185,12 @@
  */
 
 // import mongoose
+import mongoose from "mongoose";
 
 // establish connection
 
+mongoose.connect("mongodb+srv://sweetGhala:Ghms%23982000@cluster0.axactln.mongodb.net/labDB?retryWrites=true&w=majority&appName=Cluster0")
+    .then(() => console.log("Connected to MongoDB"))
 
 // define schema
 
