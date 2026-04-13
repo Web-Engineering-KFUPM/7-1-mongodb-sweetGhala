@@ -193,6 +193,13 @@ mongoose.connect("mongodb+srv://sweetGhala:Ghms%23982000@cluster0.axactln.mongod
     .then(() => console.log("Connected to MongoDB"))
 
 // define schema
+const studentSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    major: String
+});
+
+const Student = mongoose.model("Student", studentSchema);
 
 
 // create document
